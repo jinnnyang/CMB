@@ -1,0 +1,10 @@
+{
+    "python.autoComplete.extraPaths": [],
+    "python.condaPath": "/home/ubuntu/.miniconda3/bin/conda",
+    "python.createEnvironment.contentButton": "show",
+    "python.defaultInterpreterPath": "/home/ubuntu/.miniconda3/bin/python",
+    "python.languageServer": "Pylance",
+    "python.analysis.autoFormatStrings": true,
+    "python.analysis.diagnosticMode": "workspace",
+    "python.analysis.importFormat": "relative"
+}

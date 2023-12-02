@@ -1,0 +1,30 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Answer Generating",
+            "type": "python",
+            "request": "launch",
+            "program": "${workspaceFolder}/src/generate_answers.py",
+            "console": "integratedTerminal",
+            "justMyCode": true,
+            "args": [
+                "--use_cot",
+                "--model_id=chatglm3_6b",
+                "--all_gather_freq=5",
+                "--input_path=./data/CMB-Exam/CMB-test/CMB-test-choice-question-merge.json",
+                "--output_path=./result/Exam/chatglm3_6b/modelans.json",
+                "--batch_size=1",
+                "--model_config_path=./configs/model_config.yaml"
+            ],
+            "serverReadyAction": {
+                "pattern": "unning on local URL:  http://0.0.0.0:([0-9]+)",
+                "uriFormat": "http://server.local:%s",
+                "action": "openExternally"
+              }
+        }
+    ]
+}
